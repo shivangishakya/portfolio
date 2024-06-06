@@ -1,20 +1,19 @@
+// src/App.js
 import React from 'react';
+import Header from './components/Header';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>My Portfolio</h1>
-        <nav>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
+      <Header photo="path-to-your-photo.jpg" name="Your Name" />
       <section id="about">
         <h2>About Me</h2>
         <p>This is the about section.</p>
+      </section>
+      <section id="experience">
+        <h2>Professional Experience</h2>
+        <p>This is the professional experience section.</p>
       </section>
       <section id="projects">
         <h2>Projects</h2>
@@ -26,6 +25,6 @@ function App() {
       </section>
     </div>
   );
-}
+};
 
 export default App;
