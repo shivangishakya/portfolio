@@ -6,7 +6,7 @@ import './App.css';
 const App = () => {
   return (
     <div className="App">
-      <Header photo="path-to-your-photo.jpg" name="Your Name" />
+      <Header photo="${process.env.PUBLIC_URL}/photo.jpg" name="Shivangi Shakya" />
       <section id="about">
         <h2>About Me</h2>
         <p>This is the about section.</p>
